@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body class="registration-body">
+<form class="row g-3 registration-form" id="registration-form">
+		<h1 style="text-align: center;" class="display-3">Registration Form</h1>
+		<div class="col-md-8 full-name">
+			<label for="full-name" class="form-label">Full name</label>
+			<input type="text" class="form-control" id="full-name" required autocomplete="off">
+			<div class="valid-feedback" id="full-name-valid">
+				Looks good!
+			</div>
+			<div class="invalid-feedback" id="full-name-invalid">
+				Please enter a valid full name
+			</div>
+		</div>
+		<div></div>
+		<div class="col-md-8 gender">
+			<label for="gender" class="form-label">Gender</label>
+			<select class="form-select" id="gender" required autocomplete="off">
+				<option value="None" selected>Choose...</option>
+				<option value="MALE">MALE</option>
+				<option value="FEMALE">FEMALE</option>
+			</select>
+			<div class="valid-feedback" id="gender-valid">
+				Looks good!
+			</div>
+			<div class="invalid-feedback" id="gender-invalid">
+				Please select a valid gender.
+			</div>
+		</div>
+		<div></div>
+		<div class="col-md-8 hobby" id="hobby">
+		<label for="hobbies" class="form-label hobbies">Hobbies</label>
+		<div class="col-12">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="Swimming" id="swimming" required>
+				<label class="form-check-label" for="swimming">
+					Swimming
+				</label>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="Reading novels" id="reading-novels" required>
+				<label class="form-check-label" for="reading-novels">
+					Reading novels
+				</label>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="Dancing" id="dancing" required>
+				<label class="form-check-label" for="dancing">
+					Dancing
+				</label>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="Singing" id="singing" required>
+				<label class="form-check-label" for="singing">
+					Singing
+				</label>
+			</div>
+		</div>
+		<div class="valid-feedback" id="hobbies-valid">
+			Looks good!
+		</div>
+		<div class="invalid-feedback" id="hobbies-invalid">
+			Please enter valid hobby
+		</div>
+	</div>
+		<div class="col-12" style="text-align: center;">
+			<button class="btn btn-dark submit" type="button" onclick="validate()">Submit form</button>
+		</div>
+	</form>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>

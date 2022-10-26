@@ -1,0 +1,28 @@
+.registration-form{
+	width: 800px;
+  margin: 10px auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #beffe6b8;
+  
+}
+.full-name,
+.gender {
+  margin: 16px auto;
+  font-weight: 600;
+} 
+.submit {
+  margin-bottom: 30px;
+}
+
+.hobby {
+  margin: 16px auto;
+  font-weight: 600;
+} 
+.hobbies {
+  font-weight: 600;
+}
+.registration-body {
+  background-color: lightslategray;
+  padding-top: 50px;
+}
